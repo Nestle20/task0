@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task0.HelloController" alignment="CENTER" spacing="20">
+    <!-- Первый блок: Ввод суммы -->
+    <FlowPane alignment="CENTER" hgap="10">
+        <Label text="Сумма в чеке:"/>
+        <TextField fx:id="sumInput" promptText="Введите сумму"/>
+    </FlowPane>
+
+    <!-- Второй блок: Варианты расчета чаевых через радиокнопки -->
+    <HBox spacing="40" alignment="CENTER">
+        <Button text="15%" onAction="#onCalculateBigTip" style="-fx-background-color: yellow;"/>
+        <Label text="Расчет чаевых 15%"/>
+    </HBox>
+
+    <!-- Радиокнопки для выбора между 9% и 10% -->
+    <HBox spacing="40" alignment="CENTER">
+        <RadioButton text="9%" fx:id="radioButton1" toggleGroup="$tipToggleGroup"/>
+        <RadioButton text="10%" fx:id="radioButton2" toggleGroup="$tipToggleGroup"/>
+    </HBox>
+
+    <!-- Кнопка для расчета на основе выбранной радиокнопки -->
+    <HBox spacing="40" alignment="CENTER">
+        <Label text="Выбор между 9% и 10%"/>
+    </HBox>
+
+    <HBox spacing="40" alignment="CENTER">
+        <Button text="Рассчитать" onAction="#onCalculateTipWithRadio" style="-fx-background-color: yellow;"/>
+    </HBox>
+
+    <!-- Третий блок: Мелочь 3% -->
+    <HBox spacing="40" alignment="CENTER">
+        <Button text="3%" onAction="#onCalculateSmallTip" style="-fx-background-color: yellow;"/>
+        <Label text="Расчет чаевых 3%"/>
+    </HBox>
+
+    <!-- Четвертый блок: Результат -->
+    <Label fx:id="resultLabel" text="Итоговая сумма: "/>
+
+</VBox>
