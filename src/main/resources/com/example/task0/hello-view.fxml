@@ -12,11 +12,7 @@
 
     <!-- Второй блок: Варианты расчета чаевых через радиокнопки -->
     <HBox spacing="40" alignment="CENTER">
-<<<<<<< HEAD
-        <Button text="15%" onAction="#onCalculateBigTip" style="-fx-background-color: yellow;"/>
-=======
         <Button text="15%" onAction="#onCalculateBigTip" style="-fx-background-color: green;"/>
->>>>>>> 6772aa0 (Изменили цвет кнопок)
         <Label text="Расчет чаевых 15%"/>
     </HBox>
 
@@ -32,20 +28,12 @@
     </HBox>
 
     <HBox spacing="40" alignment="CENTER">
-<<<<<<< HEAD
-        <Button text="Рассчитать" onAction="#onCalculateTipWithRadio" style="-fx-background-color: yellow;"/>
-=======
         <Button text="Рассчитать" onAction="#onCalculateTipWithRadio" style="-fx-background-color: green;"/>
->>>>>>> 6772aa0 (Изменили цвет кнопок)
     </HBox>
 
     <!-- Третий блок: Мелочь 3% -->
     <HBox spacing="40" alignment="CENTER">
-<<<<<<< HEAD
-        <Button text="3%" onAction="#onCalculateSmallTip" style="-fx-background-color: yellow;"/>
-=======
         <Button text="3%" onAction="#onCalculateSmallTip" style="-fx-background-color: green;"/>
->>>>>>> 6772aa0 (Изменили цвет кнопок)
         <Label text="Расчет чаевых 3%"/>
     </HBox>
 
